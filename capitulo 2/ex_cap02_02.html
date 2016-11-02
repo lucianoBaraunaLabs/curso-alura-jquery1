@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Introdução ao jQuery</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="container">
+
+   <p id="descricao">jquery</p>
+   <button class="trocaTexto">TROCAR TEXTO</button>
+   <script src="js/jquery.js"></script>
+	<script type="text/javascript">
+	$('.trocaTexto').on('click', function() {
+		$('#descricao').text('Jquery é demais');
+	});
+	</script>
+
+</body>
+</html>

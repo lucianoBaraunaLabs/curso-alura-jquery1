@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Introdução ao jQuery</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="container">
+
+   <label>Nome:</label>
+   <input id="nome"  type="text" />
+
+   <script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$('#nome').on('blur', function(){
+			var $this = event.target;
+			console.log($this);
+			console.log(event.type);
+			var texto = $(this).val();
+			if (!texto) {
+				alert('Não deve ser vazio');
+			}
+		});
+	</script>
+
+</body>
+</html>
